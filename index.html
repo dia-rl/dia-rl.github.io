@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DIVA learns a value function over partially denoised actions and uses it to assign credit to each step of the denoising chain when fine-tuning diffusion robot policies with reinforcement learning.">
-  <meta name="keywords" content="DIVA, diffusion policy, reinforcement learning, policy gradient, robot manipulation">
+        content="DAVE learns a value function over partially denoised actions and uses it to assign credit to each step of the denoising chain when fine-tuning diffusion robot policies with reinforcement learning.">
+  <meta name="keywords" content="DAVE, diffusion policy, reinforcement learning, policy gradient, robot manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DIVA: Diffusion Intermediate Value Advantage</title>
+  <title>DAVE: Denoising Advantage from intermediate Value Estimation</title>
 
   <!-- Nerfies' Google Analytics tag removed, as their own footer asks borrowers to do. -->
 
@@ -38,7 +38,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DIVA: Diffusion Intermediate Value Advantage<br>for Diffusion Policy Optimization</h1>
+          <h1 class="title is-1 publication-title">DAVE: Denoising Advantage from intermediate Value Estimation<br>for Diffusion Policy Optimization</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Arjun Sohal<sup>1</sup>,</span>
@@ -118,7 +118,7 @@
         <source src="./static/videos/hero.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        DIVA across six tasks.
+        DAVE across six tasks.
       </h2>
     </div>
   </div>
@@ -140,17 +140,17 @@
             distinguishing which intermediate decisions contributed most to the final return.
           </p>
           <p>
-            We introduce <span class="dnerf">DIVA</span> (<i>Diffusion Intermediate Value
-            Advantage</i>), a policy-gradient method that learns a value function over partially
+            We introduce <span class="dnerf">DAVE</span> (<i>Denoising Advantage from intermediate Value
+            Estimation</i>), a policy-gradient method that learns a value function over partially
             denoised actions and uses it to construct a denoising-level advantage for each step of
-            the generative process. DIVA combines this inner credit signal with the standard
+            the generative process. DAVE combines this inner credit signal with the standard
             environment-level PPO advantage, providing state-dependent credit throughout the
             denoising chain.
           </p>
           <p>
-            Across Robomimic, FurnitureBench, Franka Kitchen, and D3IL, DIVA consistently improves
+            Across Robomimic, FurnitureBench, Franka Kitchen, and D3IL, DAVE consistently improves
             final performance over existing diffusion-policy fine-tuning methods. Beyond final
-            reward, DIVA reaches successful states more efficiently and can shift farther from the
+            reward, DAVE reaches successful states more efficiently and can shift farther from the
             pretrained behavior distribution, enabling it to discover more effective and efficient
             task-level strategies and subtask sequences that baseline methods fail to reach.
           </p>
@@ -199,10 +199,10 @@
     </div>
 
     <div class="columns is-centered"><div class="column is-full">
-      <h3 class="title is-4">DIVA consistently improves downstream performance across tasks</h3>
+      <h3 class="title is-4">DAVE consistently improves downstream performance across tasks</h3>
       <div class="content has-text-justified">
         <p>
-          Across all four benchmarks DIVA attains the highest final return of the methods
+          Across all four benchmarks DAVE attains the highest final return of the methods
           compared.
         </p>
       </div>
@@ -230,10 +230,10 @@
     </div>
 
     <div class="columns is-centered" style="margin-top:2rem;"><div class="column is-full">
-      <h3 class="title is-4">DIVA reaches successful states more efficiently</h3>
+      <h3 class="title is-4">DAVE reaches successful states more efficiently</h3>
       <div class="content has-text-justified">
         <p>
-          DIVA arrives at successful states in fewer environment steps.
+          DAVE arrives at successful states in fewer environment steps.
         </p>
       </div>
     </div></div>
@@ -248,15 +248,15 @@
         <video autoplay muted loop playsinline style="width:100%;">
           <source src="./static/videos/avoid.mp4" type="video/mp4">
         </video>
-        <p class="has-text-centered is-size-7" style="color:#5a6870;">End-effector paths as they are executed: DIVA commits to a more rewarding route to the goal.</p>
+        <p class="has-text-centered is-size-7" style="color:#5a6870;">End-effector paths as they are executed: DAVE commits to a more rewarding route to the goal.</p>
       </div>
     </div>
 
     <div class="columns is-centered" style="margin-top:2rem;"><div class="column is-full">
-      <h3 class="title is-4">DIVA learns task sequences that are weakly represented or absent in the demonstrations</h3>
+      <h3 class="title is-4">DAVE learns task sequences that are weakly represented or absent in the demonstrations</h3>
       <div class="content has-text-justified">
         <p>
-          Where the full solution is rare in the demonstration data, DIVA reaches
+          Where the full solution is rare in the demonstration data, DAVE reaches
           successful sequences that the baselines do not.
         </p>
       </div>
@@ -266,7 +266,7 @@
         <video autoplay muted loop playsinline style="width:100%;">
           <source src="./static/videos/kitchen.mp4" type="video/mp4">
         </video>
-        <p class="has-text-centered is-size-7" style="color:#5a6870;">Franka Kitchen, same reset: DIVA completes the full target sequence where DPPO stops short.</p>
+        <p class="has-text-centered is-size-7" style="color:#5a6870;">Franka Kitchen, same reset: DAVE completes the full target sequence where DPPO stops short.</p>
       </div>
     </div>
   </div>
@@ -276,9 +276,9 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{sohal2026diva,
+    <pre><code>@inproceedings{sohal2026dave,
   author    = {Arjun Sohal and Yuchi Zhao and Miroslav Bogdanovic and Al\'an Aspuru-Guzik},
-  title     = {DIVA: Diffusion Intermediate Value Advantage for Diffusion Policy Optimization},
+  title     = {DAVE: Denoising Advantage from intermediate Value Estimation for Diffusion Policy Optimization},
   year      = {2026},
 }</code></pre>
   </div>

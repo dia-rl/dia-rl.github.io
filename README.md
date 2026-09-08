@@ -1,4 +1,4 @@
-# DIVA project page
+# DAVE project page
 
 Built on the [Nerfies](https://nerfies.github.io) project page template
 (<https://github.com/nerfies/nerfies.github.io>), which is released under
@@ -45,6 +45,6 @@ slider scripts behave better over HTTP.
 
 ## Published at
 
-<https://diva-policy.github.io> — GitHub Pages, from `main` at the repository root of
-`diva-policy/diva-policy.github.io`. That repository is a copy of this directory, not a
+<https://dave-policy.github.io> — GitHub Pages, from `main` at the repository root of
+`dave-policy/dave-policy.github.io`. That repository is a copy of this directory, not a
 submodule: to publish a change here, copy the directory over and push.
